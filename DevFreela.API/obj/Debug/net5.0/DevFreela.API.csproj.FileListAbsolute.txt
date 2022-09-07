@@ -29,3 +29,9 @@ C:\Codes\DevFreela\DevFreela\DevFreela.API\obj\Debug\net5.0\DevFreela.API.pdb
 C:\Codes\DevFreela\DevFreela\DevFreela.API\obj\Debug\net5.0\DevFreela.API.genruntimeconfig.cache
 C:\Codes\DevFreela\DevFreela\DevFreela.API\bin\Debug\net5.0\appsettingsDeveloptment.Development.json
 C:\Codes\DevFreela\DevFreela\DevFreela.API\bin\Debug\net5.0\appsettingsDeveloptment.json
+C:\Codes\DevFreela\DevFreela\DevFreela.API\bin\Debug\net5.0\DevFreela.Application.dll
+C:\Codes\DevFreela\DevFreela\DevFreela.API\bin\Debug\net5.0\DevFreela.Core.dll
+C:\Codes\DevFreela\DevFreela\DevFreela.API\bin\Debug\net5.0\DevFreela.Infrastructure.dll
+C:\Codes\DevFreela\DevFreela\DevFreela.API\bin\Debug\net5.0\DevFreela.Application.pdb
+C:\Codes\DevFreela\DevFreela\DevFreela.API\bin\Debug\net5.0\DevFreela.Core.pdb
+C:\Codes\DevFreela\DevFreela\DevFreela.API\bin\Debug\net5.0\DevFreela.Infrastructure.pdb
