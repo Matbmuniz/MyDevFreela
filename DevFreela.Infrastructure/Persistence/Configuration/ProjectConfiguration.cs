@@ -13,20 +13,19 @@ namespace DevFreela.Infrastructure.Persistence.Configuration
     {
         public void Configure(EntityTypeBuilder<Project> builder)
         {
-
             builder
                 .HasKey(p => p.Id);
 
             builder
                 .HasOne(p => p.Freelancer)
                 .WithMany(f => f.FreelanceProjects)
-                .HasForeignKey(f => f.IdFreelancer)
+                .HasForeignKey(p => p.IdFreelancer)
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder
                 .HasOne(p => p.Cliente)
                 .WithMany(f => f.OwnedProjects)
-                .HasForeignKey(f => f.IdClient)
+                .HasForeignKey(p => p.IdClient)
                 .OnDelete(DeleteBehavior.Restrict);
         }
     }

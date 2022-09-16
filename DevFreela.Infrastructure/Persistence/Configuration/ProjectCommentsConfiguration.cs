@@ -15,14 +15,12 @@ namespace DevFreela.Infrastructure.Persistence.Configuration
             builder
                 .HasOne(p => p.Project)
                 .WithMany(p => p.Comments)
-                .HasForeignKey(p => p.IdProject)
-                .OnDelete(DeleteBehavior.Restrict);
+                .HasForeignKey(p => p.IdProject);
 
             builder
                 .HasOne(p => p.User)
                 .WithMany(p => p.Comments)
-                .HasForeignKey(p => p.IdUser)
-                .OnDelete(DeleteBehavior.Restrict);
+                .HasForeignKey(p => p.IdUser);
         }
     }
 }
