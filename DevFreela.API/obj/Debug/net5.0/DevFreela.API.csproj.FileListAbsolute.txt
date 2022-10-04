@@ -69,3 +69,5 @@ C:\Codes\DevFreela\DevFreela\DevFreela.API\bin\Debug\net5.0\Microsoft.EntityFram
 C:\Codes\DevFreela\DevFreela\DevFreela.API\bin\Debug\net5.0\ref\DevFreela.API.dll
 C:\Codes\DevFreela\DevFreela\DevFreela.API\obj\Debug\net5.0\staticwebassets\DevFreela.API.StaticWebAssets.xml
 C:\Codes\DevFreela\DevFreela\DevFreela.API\bin\Debug\net5.0\Dapper.dll
+C:\Codes\DevFreela\DevFreela\DevFreela.API\bin\Debug\net5.0\MediatR.dll
+C:\Codes\DevFreela\DevFreela\DevFreela.API\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll

@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "JzE9pHC/gFTcSr1qGHqNTmr8as63Qub0Y6CKOJ5YkQLsROPagbZDnf1EA4PXGybRyGRxd6OLxptiq2ef4hat3Q==",
+  "dgSpecHash": "dpRBPmI6gpyCE7RvWpEVZaGfTbM24zEg0I2hebkURVT47kC3r1/fX8fpwUzF8gAYolZDb7R5WObnROl00nP5IA==",
   "success": true,
   "projectFilePath": "C:\\Codes\\DevFreela\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Barreto\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\Barreto\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\Barreto\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\Barreto\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Barreto\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\Barreto\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",

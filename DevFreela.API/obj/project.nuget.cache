@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "0vFpt2EXNbgREUXgpJ5Z6DuIUdtHShr2lgSS8MkXTIWnpYGPQ+TSvFCfeDNtxsp5AOYKtsSHhDc6c3nMjG730Q==",
+  "dgSpecHash": "kKcTK32eUPYj6IXWc9O5whxcEJjBzGs0WQJdGilJWDOyvc2JdpuGrnkdxZdKlx2TchcS589/sD0jyzOb7i0MzA==",
   "success": true,
   "projectFilePath": "C:\\Codes\\DevFreela\\DevFreela\\DevFreela.API\\DevFreela.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Barreto\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Barreto\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Barreto\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\Barreto\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\Barreto\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Barreto\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\Barreto\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
