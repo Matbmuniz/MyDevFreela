@@ -24,7 +24,7 @@ namespace DevFreela.Application.Queries.GetAllProjects
             var projects = _dbContext.Projects;
 
             var projectsViewModel = await projects
-                .Select(p => new ProjectViewModel(p.Id, p.Title, p.CreatedAt))
+                .Select(p => new ProjectViewModel(p.Id, p.Title, p.CreateDate))
                 .ToListAsync();
 
             return projectsViewModel;

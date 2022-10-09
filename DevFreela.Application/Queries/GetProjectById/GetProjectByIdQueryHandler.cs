@@ -18,7 +18,7 @@ namespace DevFreela.Application.Queries.GetProjectById
         public async Task<ProjectDetailsViewModel> Handle(GetProjectByIdQuery request, CancellationToken cancellationToken)
         {
             var project = await _dbContext.Projects
-                .Include(p => p.Client)
+                .Include(p => p.Cliente)
                 .Include(p => p.Freelancer)
                 .SingleOrDefaultAsync(p => p.Id == request.Id);
 
@@ -29,9 +29,9 @@ namespace DevFreela.Application.Queries.GetProjectById
                 project.Title,
                 project.Description,
                 project.TotalCost,
-                project.StartedAt,
-                project.FinishedAt,
-                project.Client.FullName,
+                project.StartedCreate,
+                project.FinishedCreate,
+                project.Cliente.FullName,
                 project.Freelancer.FullName
                 );
 
