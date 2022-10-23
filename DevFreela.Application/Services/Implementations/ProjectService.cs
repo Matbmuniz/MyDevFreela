@@ -2,6 +2,7 @@
 using DevFreela.Application.InputModels;
 using DevFreela.Application.Services.Interfaces;
 using DevFreela.Application.ViewModels;
+using DevFreela.Core.DTOs;
 using DevFreela.Core.Entities;
 using DevFreela.Infrastructure.Persistence;
 using Microsoft.Data.SqlClient;
@@ -56,29 +57,29 @@ namespace DevFreela.Application.Services.Implementations
             var projects = _dbContext.Projects;
 
             var projectsViewModel = projects
-                .Select(p => new ProjectViewModel(p.Id, p.Title, p.CreateDate))
+                .Select(p => new ProjectViewModel(p.Id, p.Title, p.CreatedAt))
                 .ToList();
 
             return projectsViewModel;
         }
 
-        public ProjectDetailsViewModel GetById(int id)
+        public ProjectDTO GetById(int id)
         {
             var project = _dbContext.Projects
-                .Include(p => p.Cliente)
+                .Include(p => p.Client)
                 .Include(p => p.Freelancer)
                 .SingleOrDefault(i => i.Id == id);
 
             if (project == null) return null;
 
-            var projectDetailsViewModel = new ProjectDetailsViewModel(
+            var projectDetailsViewModel = new ProjectDTO(
                 project.Id,
                 project.Title,
                 project.Description, 
                 project.TotalCost,
-                project.CreateDate,
-                project.FinishedCreate,
-                project.Cliente.FullName,
+                project.CreatedAt,
+                project.FinishedAt,
+                project.Client.FullName,
                 project.Freelancer.FullName);
 
             return projectDetailsViewModel;
@@ -95,7 +96,7 @@ namespace DevFreela.Application.Services.Implementations
                 sqlConnection.Open();
 
                 var script = "UPDATE Projects SET Status = @status, StartedCreate = @startedCreate WHERE Id = @id";
-                sqlConnection.Execute(script, new { status = project.Status, startedCreate = project.StartedCreate, id });
+                sqlConnection.Execute(script, new { status = project.Status, startedCreate = project.StartedAt, id });
             }
         }
 
@@ -106,6 +107,11 @@ namespace DevFreela.Application.Services.Implementations
             project.Update(inputModel.Title, inputModel.Description, inputModel.TotalCost);
 
             _dbContext.SaveChanges();
+        }
+
+        ProjectDTO IProjectService.GetById(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

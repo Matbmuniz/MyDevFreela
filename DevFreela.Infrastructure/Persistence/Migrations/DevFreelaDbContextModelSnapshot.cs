@@ -26,13 +26,13 @@ namespace DevFreela.Infrastructure.Persistence.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<DateTime>("CreateDate")
+                    b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime?>("FinishedCreate")
+                    b.Property<DateTime?>("FinishedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("IdClient")
@@ -41,7 +41,7 @@ namespace DevFreela.Infrastructure.Persistence.Migrations
                     b.Property<int>("IdFreelancer")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("StartedCreate")
+                    b.Property<DateTime?>("StartedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("Status")
@@ -50,7 +50,7 @@ namespace DevFreela.Infrastructure.Persistence.Migrations
                     b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal?>("TotalCost")
+                    b.Property<decimal>("TotalCost")
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
@@ -72,7 +72,7 @@ namespace DevFreela.Infrastructure.Persistence.Migrations
                     b.Property<string>("Content")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreateDate")
+                    b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("IdProject")
@@ -97,7 +97,7 @@ namespace DevFreela.Infrastructure.Persistence.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<DateTime>("CreateDate")
+                    b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
@@ -121,7 +121,7 @@ namespace DevFreela.Infrastructure.Persistence.Migrations
                     b.Property<DateTime>("BirthDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("CreateDate")
+                    b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
@@ -162,7 +162,7 @@ namespace DevFreela.Infrastructure.Persistence.Migrations
 
             modelBuilder.Entity("DevFreela.Core.Entities.Project", b =>
                 {
-                    b.HasOne("DevFreela.Core.Entities.User", "Cliente")
+                    b.HasOne("DevFreela.Core.Entities.User", "Client")
                         .WithMany("OwnedProjects")
                         .HasForeignKey("IdClient")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -174,7 +174,7 @@ namespace DevFreela.Infrastructure.Persistence.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.Navigation("Cliente");
+                    b.Navigation("Client");
 
                     b.Navigation("Freelancer");
                 });
